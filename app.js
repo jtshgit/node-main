@@ -12,13 +12,13 @@ const sendmail = async (req, res, next) => {
             port: 587,
             secure: false,
             auth: {
-                user: "selmonbhoi690@gmail.com",
-                pass: "tqfekfnjtivbbmvx",
+                user: "<your_email>",
+                pass: "<you password>",
             },
         });
 
         const info = await transporter.sendMail({
-            from: `"Attend-Go 👻" <${to_email}>`,
+            from: `"👻" <${to_email}>`,
             to: to_email,
             subject: "Verification Code",
             text: "",
